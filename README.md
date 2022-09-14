@@ -46,6 +46,13 @@ pip install -r requirements.txt
 
 ```
 
+Download the spacy library
+
+```
+python -m spacy download en_core_web_sm
+
+```
+
 Run the Data_preprocess.py file using below command, it will create new cleaned documnets file and save in the original_data folder with name data_files.json
 
 ```
