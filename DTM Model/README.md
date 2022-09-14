@@ -15,9 +15,7 @@ We highly recommend you to clean and preprocess the collection before using it. 
 1. Download dtmvisual repository
 2. Run in the terminal
 ```
-$ cd Downloads
-$ cd dtmvisual-master
-$ python setup.py install
+pip install -r requirements.txt
 ```
 3. Import dtmvisual package into a Python environment:
 
