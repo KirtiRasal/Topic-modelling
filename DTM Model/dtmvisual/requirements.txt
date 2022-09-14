@@ -1,0 +1,6 @@
+### requirements to install
+gensim==3.4.0
+pickle-mixin
+pprint
+seaborn==0.8.1
+matplotlib==2.0.2
