@@ -22,7 +22,41 @@ Data_preprocess.py
 ```
 
 - The python script to visualize the eurvoc descriptors (keywords) fro the documents and check their trend
+
 ```
 Eurovoc_descriptor_visualization.py
 
 ```
+
+## Environment
+
+We need a python environment for executing the cleaning files. Latest python version for 64 bit Windows 10 can be supportive to run these files.
+
+## Installation
+
+pip version 21.1.3
+
+Install packages with pip: -r requirements.txt
+
+The following command will install the packages according to the configuration file requirements.txt. 
+Run the following command where requirements.txt file is located.
+
+```
+pip install -r requirements.txt
+
+```
+
+Run the Data_preprocess.py file using below command, it will create new cleaned documnets file and save in the original_data folder with name data_files.json
+
+```
+python Data_preprocess.py
+
+```
+
+Run the Eurovoc_descriptor_visualization.py  file using below command, it will create new graphs using eurovoc descriptors and save in the Graphs folder
+
+```
+python Eurovoc_descriptor_visualization.py
+
+```
+
