@@ -1,0 +1,5 @@
+###### Requirements Specifiers ######`
+pandas
+gensim
+bertopic
+bertopic[flair]
