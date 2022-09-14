@@ -56,13 +56,13 @@ def get_c_w2v(time, model, sentences, corpus):
 
 def main():
 
-    legal_docs_df = pd.read_json('data_files.json')
+    legal_docs_df = pd.read_json('data/data_files.json')
 
     sentences = gensim_corpus.docs_to_list(legal_docs_df['clean_Document_Content'])
     corpus = gensim_corpus.corpus_dtm(sentences)
 
 
-    model = mod.load_saved_model(path="model_pickle/" , output_name='DTM_Fixed')
+    model = mod.load_saved_model(path="model/" , output_name='DTM_Fixed')
 
     #evaluating c_v coherence measure
     c_v = get_c_v(time=2, model=model, sentences=sentences, corpus=corpus)
