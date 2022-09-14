@@ -8,11 +8,11 @@ from dtmvisual import DTMmodel as mod
 
 def main():
 
-    legal_docs_df = pd.read_json('input_data/data_files.json')
+    legal_docs_df = pd.read_json('data/data_files.json')
 
     legal_docs_df['Effective_date'] = legal_docs_df['Effective_date'].apply(lambda x: pd.Timestamp(x))
 
-    path = "DTM_wrapper/dtm-win64.exe"
+    path = "DTM_Wrapper/dtm-win64.exe"
 
     legal_docs_df['Year'] = legal_docs_df['Effective_date'].dt.year
 
