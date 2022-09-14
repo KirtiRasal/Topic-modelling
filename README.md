@@ -67,3 +67,4 @@ python Eurovoc_descriptor_visualization.py
 
 ```
 
+Three different models have been implemented Dynamic NMF, Dynamic Topic Model and BERTopic. The implementation of all the three models have been allocated in three different folders.
