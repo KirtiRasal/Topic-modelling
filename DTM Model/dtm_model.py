@@ -26,7 +26,7 @@ def main():
                     id2word=corpus.dictionary, alpha=0.01, model='fixed')
 
 
-    mod.save_model(model=model, path="models/", output_name="DTM_Fixed")
+    mod.save_model(model=model, path="model/", output_name="DTM_Fixed")
 
     model = mod.load_saved_model(path="" , output_name='DTM_Fixed')
 
