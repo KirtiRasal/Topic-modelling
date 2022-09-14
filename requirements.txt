@@ -4,4 +4,6 @@ pandas
 numpy
 nltk
 spacy
+lxml
+matplotlib
 lexnlp
