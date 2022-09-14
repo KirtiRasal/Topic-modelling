@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import os
 
-data_file_name_with_path = '../data_files.json'
+data_file_name_with_path = 'data/data_files.json'
 
 def main():
 
