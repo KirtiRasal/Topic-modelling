@@ -1,0 +1,7 @@
+###### Requirements with Version Specifiers ######`
+bs4
+pandas 
+numpy
+nltk
+spacy
+lexnlp
