@@ -65,6 +65,12 @@ def main():
 
     topic_model = load_saved_model(path="pickle/BERT_Model.pkl")
 
+    dates = legal_docs_df['Effective_date'].apply(lambda x: pd.Timestamp(x))
+	
+    topics_over_time = topic_model.topics_over_time(documents_orig, topics, dates, nr_bins=20)
+
+    topic_model.visualize_topics_over_time(topics_over_time, top_n_topics=20)
+
     topic_information = get_topic_information(topic_model)
 
     print(topic_information)
